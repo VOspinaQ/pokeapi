@@ -1,0 +1,111 @@
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px; 
+  padding: 20px; 
+}
+
+.pokemon-card {
+  display: flex;
+  flex-direction: column;
+  background: #f0f9f9; 
+  border-radius: 15px; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.pokemon-card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); 
+}
+
+.pokemon-card-header {
+  background: #8ed1c6; 
+  color: #035d59; 
+  padding: 10px;
+  width: 100%;
+}
+
+.pokemon-card-image-container {
+  margin: 0 auto 10px; 
+  width: 150px; 
+  height: 150px;
+  border-radius: 50%; 
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #0b444e; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+}
+
+.pokemon-card-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.pokemon-card-title {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #2c3e50; 
+}
+
+.pokemon-card-content {
+  padding: 15px;
+  background: #ffffff;
+  color: #4a4a4a; 
+}
+
+.pokemon-card-actions {
+  padding: 15px;
+  background: #eef5f5;
+  display: flex;
+  justify-content: center;
+}
+
+.pokemon-sound-button {
+  background: #ff6f61; 
+  color: white;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 1.1em;
+  transition: background 0.3s;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokemon-sound-button:hover {
+  background: #e05548; 
+}
+
+.pokemon-sound-button h1 {
+  margin: 0;
+  font-size: inherit;
+  line-height: 1;
+}
+.pokemon-title {
+  font-size: 2.5em; 
+  font-weight: bold;
+  text-align: center; 
+  color: #035d59; 
+  background: #97ccbf; 
+  padding: 20px; 
+  border-radius: 10px; 
+  margin-bottom: 30px; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); 
+  
+}
+
+.pokemon-title:hover {
+  
+  transform: scale(1.05); 
+  transition: all 0.3s ease; 
+}
+

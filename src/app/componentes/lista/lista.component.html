@@ -1,0 +1,27 @@
+<h1 class="pokemon-title">Pokemons, characteristics, and sound</h1>
+<div class="pokemon-grid">
+  @for(item of pokemonesCompleto; track item.id){
+      <mat-card class="pokemon-card">
+          <div class="pokemon-card-header">
+              <div class="pokemon-card-image-container">
+                  <img [src]="item.sprites.front_default" alt="{{item.name}}" />
+              </div>
+              <mat-card-title class="pokemon-card-title">{{item.name}}</mat-card-title>
+          </div>
+          
+          <mat-card-content class="pokemon-card-content">
+              <p><strong>Type:</strong> {{ item.types[0].type.name }}</p>
+              <p><strong>Height</strong> {{ item.height }} decimeters</p>
+              <p><strong>Weight: </strong> {{ item.weight }} hectograms</p>
+              
+              
+          </mat-card-content>
+          
+          <mat-card-actions class="pokemon-card-actions">
+              <button mat-button (click)="playSound(item.cries.latest)" class="pokemon-sound-button"><h1>🔊 Sound</h1></button>
+          </mat-card-actions>
+      </mat-card>
+    }
+  
+  
+  
